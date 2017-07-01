@@ -1,4 +1,4 @@
-# `<Touchable>` (react-native-platform-touchable)
+# `<Touchable>`
 
 A wrapper around the various `Touchable*` components built into React Native core in order to use `TouchableNativeFeedback` whenever possible, provide an easier interface to using it, and flatten out API differences between the Touchable components.
 
@@ -21,6 +21,41 @@ A wrapper around the various `Touchable*` components built into React Native cor
     <Child />
   </Touchable>
   ```
+
+## Usage
+
+```
+npm i react-native-platform-touchable --save
+
+ # or
+
+yarn add react-native-platform-touchable
+```
+
+```javascript
+import React from 'react';
+import { Text, View } from 'react-native';
+import Touchable from 'react-native-platform-touchable';
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Touchable
+          onPress={() => console.log('hello!')}
+          style={{
+            backgroundColor: '#eee',
+            paddingVertical: 30,
+            paddingHorizontal: 80,
+          }}
+          background={Touchable.Ripple('blue')}>
+          <Text>Hello there!</Text>
+        </Touchable>
+      </View>
+    );
+  }
+}
+```
 
 ## Statics
 
@@ -49,16 +84,16 @@ You can use the same props as you would use on `TouchableOpacity`, `TouchableHig
 - `pressRetentionOffset` - see [React Native
   documentation](https://facebook.github.io/react-native/docs/touchablewithoutfeedback.html#pressretentionoffset).
 
-### props used by TouchableOpacity (default iOS)
+### Additional props used by TouchableOpacity (default iOS)
 
 - `activeOpacity` - sets the opacity to animate to when touch is active.
 
-### props used by TouchableNativeFeedback  (default Android)
+### Additional props used by TouchableNativeFeedback  (default Android)
 
 - `background` - customize the touch effect with `Touchable.SelectableBackground`, `SelectableBackgroundBorderless`, or `Touchable.Ripple(color: string, borderless: boolean)`.
 - `foreground` - same as `background`, should be used instead of background if the `Touchable` has any images as children and you want the ripple to be rendered above the image (if the image is not opaque, `background` will not be visibl, you must use foreground)
 
-### props used by TouchableHighlight
+### Additional props used by TouchableHighlight
 
 - `underlayColor` - the color of the background when touch is active.
 - `onHideUnderlay` - fired immediately after the underlay is hidden
