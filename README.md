@@ -102,3 +102,4 @@ You can use the same props as you would use on `TouchableOpacity`, `TouchableHig
 ## Rounded corners on Touchables with TouchableNativeFeedback behavior
 
 - See [this example on Snack](https://snack.expo.io/B1ENztH4-) that demonstrates how to have `Touchable` with `TouchableNativeFeedback` behavior respect rounded corners from `borderRadius`.
+- Known issue: rounded corners do not work if you use a `foreground` ripple, see [facebook/react-native/issues/14798](https://github.com/facebook/react-native/issues/14798)
