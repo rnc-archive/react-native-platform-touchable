@@ -1,7 +1,8 @@
 {
   "name": "react-native-platform-touchable",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Uses TouchableNativeFeedback where possible and fallback to alternatives where not.",
+  "license": "BSD-3-Clause",
   "main": "PlatformTouchable.js",
   "scripts": {
     "lint": "eslint .",
@@ -12,7 +13,6 @@
   ],
   "keywords": [
     "react-native",
-    "exponent",
     "react"
   ],
   "author": "Brent Vatne <brent@expo.io>",
