@@ -90,7 +90,7 @@ You can use the same props as you would use on `TouchableOpacity`, `TouchableHig
 
 ### Additional props used by TouchableNativeFeedback  (default Android)
 
-- `background` - customize the touch effect with `Touchable.SelectableBackground`, `SelectableBackgroundBorderless`, or `Touchable.Ripple(color: string, borderless: boolean)`.
+- `background` - customize the touch effect with `Touchable.SelectableBackground`, `Touchable.SelectableBackgroundBorderless`, or `Touchable.Ripple(color: string, borderless: boolean)`.
 - `foreground` - same as `background`, should be used instead of background if the `Touchable` has any images as children and you want the ripple to be rendered above the image (if the image is not opaque, `background` will not be visible, you must use foreground)
 
 ### Additional props used by TouchableHighlight
