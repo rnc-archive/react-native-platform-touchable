@@ -69,7 +69,7 @@ You can use the same props as you would use on `TouchableOpacity`, `TouchableHig
 
 - `fallback` - If `TouchableNativeFeedback` is not available (on iOS and on Android API <= 20 / Android < 5.0), the component specified in this prop is used instead. Defaults to `TouchableOpacity`.
 
-- `hitSlop` - use this! pass in an object of the format `{ top: number, left: number, right: number, bottom: bottom }`, this makes the `Touchable` easier to press by expanding the touchable area by the number of points that you specify on each side, without having to change the layout of the `Touchable`, eg: by adding padding.
+- `hitSlop` - use this! pass in an object of the format `{ top: number, left: number, right: number, bottom: number }`, this makes the `Touchable` easier to press by expanding the touchable area by the number of points that you specify on each side, without having to change the layout of the `Touchable`, eg: by adding padding.
 - `onPress` - fired when you press (touch in, release within bounds).
 - `onPressIn` - fired immediately on press in (like `onmousedown` on web)
 - `onPressOut` - fired immediately on press out (like `onmouseout` on web)
