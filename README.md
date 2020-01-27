@@ -79,10 +79,10 @@ You can use the same props as you would use on `TouchableOpacity`, `TouchableHig
 - `delayPressOut` - time to wait for `onPressOut` to fire
 - `disabled` - default `false`, when `true` the button is disabled.
 - `onLayout` - see [onLayout documentation on View](http://facebook.github.io/react-native/releases/0.45/docs/view.html#onlayout)
-- `accessibilityState` - see [Accessibility guide](https://facebook.github.io/react-native/docs/accessibility.html)
-- `accessibilityRole` - see [Accessibility guide](https://facebook.github.io/react-native/docs/accessibility.html)
 - `pressRetentionOffset` - see [React Native
   documentation](https://facebook.github.io/react-native/docs/touchablewithoutfeedback.html#pressretentionoffset).
+- accessibility props - see [Accessibility guide](https://facebook.github.io/react-native/docs/accessibility.html)
+
 
 ### Additional props used by TouchableOpacity (default iOS)
 
