@@ -81,7 +81,7 @@ You can use the same props as you would use on `TouchableOpacity`, `TouchableHig
 - `onLayout` - see [onLayout documentation on View](http://facebook.github.io/react-native/releases/0.45/docs/view.html#onlayout)
 - `pressRetentionOffset` - see [React Native
   documentation](https://facebook.github.io/react-native/docs/touchablewithoutfeedback.html#pressretentionoffset).
-- accessibility props - see [Accessibility guide](https://facebook.github.io/react-native/docs/accessibility.html)
+- accessibility props - see [`TouchableWithoutFeedback`](https://facebook.github.io/react-native/docs/touchablewithoutfeedback#props) for the list of supported props and [Accessibility guide](https://facebook.github.io/react-native/docs/accessibility.html) for more information.
 
 
 ### Additional props used by TouchableOpacity (default iOS)
