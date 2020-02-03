@@ -7,14 +7,7 @@ import {
   View,
 } from 'react-native';
 
-let TouchableComponent;
-
-if (Platform.OS === 'android') {
-  TouchableComponent =
-    Platform.Version <= 20 ? TouchableOpacity : TouchableNativeFeedback;
-} else {
-  TouchableComponent = TouchableOpacity;
-}
+const TouchableComponent = Platform.OS === 'ios' || Platform.Version <= 20 ?  TouchableOpacity : TouchableNativeFeedback;
 
 if (TouchableComponent !== TouchableNativeFeedback) {
   TouchableComponent.SelectableBackground = () => ({});
