@@ -1,4 +1,10 @@
-# `<Touchable>`
+# react-native-platform-touchable is no longer maintained
+
+🚨 We recommend using [react-native-gesture-handler buttons](https://software-mansion.github.io/react-native-gesture-handler/docs/component-buttons.html) instead! 
+
+<hr />
+
+#`<Touchable>`
 
 A wrapper around the various `Touchable*` components built into React Native core in order to use `TouchableNativeFeedback` whenever possible, provide an easier interface to using it, and flatten out API differences between the Touchable components.
 
